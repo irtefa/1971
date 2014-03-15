@@ -1,0 +1,7 @@
+.hex .infantry {
+    width: 64px;
+    height: 30px;
+    background-image: url('../assets/images/units/infantry.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
