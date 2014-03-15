@@ -1,0 +1,25 @@
+.hex .top-water {
+    width: 0;
+    border-bottom: 20px solid #0066FF;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+}
+
+.hex .middle-water {
+    width: 64px;
+    height: 30px;
+    background: #0066FF;
+}
+
+.hex .bottom-water {
+    width: 0;
+    border-top: 20px solid #0066FF;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+}
+.hex-row {
+    clear: left;
+}
+.hex-row.even {
+    margin-left: 33px;
+}
