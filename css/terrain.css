@@ -1,3 +1,5 @@
+/* WATER */
+
 .hex .top-water {
     width: 0;
     border-bottom: 20px solid #0066FF;
@@ -17,9 +19,25 @@
     border-left: 32px solid transparent;
     border-right: 32px solid transparent;
 }
-.hex-row {
-    clear: left;
+
+/* HILLS */
+
+.hex .top-hills {
+    width: 0;
+    border-bottom: 20px solid #663300;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
 }
-.hex-row.even {
-    margin-left: 33px;
+
+.hex .middle-hills {
+    width: 64px;
+    height: 30px;
+    background: #663300;
+}
+
+.hex .bottom-hills {
+    width: 0;
+    border-top: 20px solid #663300;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
 }

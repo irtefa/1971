@@ -1,6 +1,19 @@
+body {
+    background: #000000;
+}
+
+p {
+    color: white;
+}
+
+.map-container {
+    width: 94%;
+    margin: 0 auto;
+}
+
 .hex {
     float: left;
-    margin-left: 2px;
+    margin-left: 5px;
     margin-bottom: -16px;
 }
 .hex .top {

@@ -1,7 +1,17 @@
-.hex .infantry {
-    width: 64px;
-    height: 30px;
-    background-image: url('../assets/images/units/infantry.png');
-    background-repeat: no-repeat;
-    background-position: center;
+.infantry-bangladesh {
+    z-index: 1;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.infantry-pakistan {
+    z-index: 1;
+    position: absolute;
+    color: black;
+    text-align: center;   
+    font-weight: bold;
+    font-size: 14px;
 }

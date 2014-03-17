@@ -1,6 +1,23 @@
 $(document).ready(function () {
+    
+    // Draw Water
     _.each(terrain['water'], function(obj) {
         drawTerrain(obj, 'water');
+    });
+
+    // Draw Hills
+    _.each(terrain['hills'], function(obj) {
+        drawTerrain(obj, 'hills');
+    });
+
+    // Draw Bangladeshi Infantry
+    _.each(terrain['units']['bangladesh']['infantry'], function(coord) {
+        drawUnit(coord, 'infantry', 'bangladesh');
+    });
+
+    // Draw Pakistani Infantry
+    _.each(terrain['units']['pakistan']['infantry'], function(coord) {
+        drawUnit(coord, 'infantry', 'pakistan');
     });
 });
 
@@ -23,4 +40,16 @@ function drawTerrain(coord, type) {
     // Bottom
     $('.y'+coord[1]).find('.x'+coord[0]).find('.bottom').addClass('bottom-'+type);
     $('.y'+coord[1]).find('.x'+coord[0]).find('.bottom').removeClass('bottom');
+}
+
+function drawUnit(coord, unitType, country) {
+    var unitDiv = constructUnitDiv(unitType, country, coord[2]);
+
+    $('.y'+coord[1]).find('.x'+coord[0]).find('.top').after(unitDiv);
+}
+
+function constructUnitDiv(unitType, country, health) {
+    var capitalizedUnitType = unitType.charAt(0).toUpperCase() + unitType.substring(1);
+
+    return "<div class='"+unitType+"-"+country+"'>"+capitalizedUnitType+" "+health+"</div>";
 }
