@@ -1,4 +1,4 @@
-.infantry-bangladesh {
+.infantry {
     z-index: 1;
     position: absolute;
     color: white;
@@ -7,11 +7,14 @@
     font-size: 14px;
 }
 
-.infantry-pakistan {
-    z-index: 1;
-    position: absolute;
+.infantry:hover {
+    cursor: pointer;
+}
+
+.infantry.bangladesh {
+    color: white;
+}
+
+.infantry.pakistan {
     color: black;
-    text-align: center;   
-    font-weight: bold;
-    font-size: 14px;
 }
