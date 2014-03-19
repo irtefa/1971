@@ -1,5 +1,4 @@
-function init() {
-    
+function init() {   
     // Draw Water
     _.each(terrain['water'], function(obj) {
         drawTerrain(obj, 'water');
@@ -27,7 +26,6 @@ function init() {
  * @param coord the x and y co-ordinates of the hex pertraining to the terrain
  * @param type the type of the terrain e.g. water, grass etc. [By default, everything is grass]
  */
-
 function drawTerrain(coord, type) {
     // Top
     $('.y'+coord[1]).find('.x'+coord[0]).find('.top').addClass('top-'+type);
@@ -49,7 +47,6 @@ function drawTerrain(coord, type) {
  * @param country the country that the unit 
  * belongs to e.g. bangladesh
  */
-
 function drawUnit(coord, unitType, country) {
     var unitDiv = constructUnitDiv(unitType, country, coord[2]);
 
