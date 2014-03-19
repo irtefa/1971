@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=1320px, initial-scale=1 maximum-scale=1'>
+    
+    <!-- stylesheets -->
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/terrain.css'>
+    <link rel='stylesheet' href='css/units.css'>
+    <link rel='stylesheet' href='css/legend.css'>
+    
+    <!-- asset loading -->
+    <script src='assets/maps/test.jsonp'></script>
+
+    <!-- vendor js files -->
+    <script type='text/javascript' src='js/vendor/jquery.min.js'></script>
+    <script type='text/javascript' src='js/vendor/underscore.min.js'></script>
+</head>
+<body>
+    <div class='hex-row hex-img'>
+        <div class='hex'>
+            <div class='top'></div>
+            <div class='middle'></div>
+            <div class='bottom'></div>
+        </div>
+    </div>
+    <p class='hex-explanation'>
+    Flat prairies.
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class='hex-row hex-img'>
+        <div class='hex'>
+            <div class='top-water'></div>
+            <div class='middle-water'></div>
+            <div class='bottom-water'></div>
+        </div>
+    </div>
+    <p class='hex-explanation'>
+    Water body e.g. river or a lake. <br>Units cannot move on this hex. <br>They can only cross this using a bridge.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class='hex-row hex-img'>
+        <div class='hex'>
+            <div class='top-hills'></div>
+            <div class='middle-hills'></div>
+            <div class='bottom-hills'></div>
+        </div>
+    </div>
+    <p class='hex-explanation'>
+    Hills <br>Blocks line of sight unless unit is on an adjacent hill.<br></p>        
+<!-- game scripts -->
+<script type='text/javascript' src='js/init.js'></script>
+<script type='text/javascript' src='js/game.js'></script>
+</body>    
+</html>

@@ -1,0 +1,12 @@
+body {
+	width: 400px;
+}
+
+.hex-img {
+	float: left;
+	padding: 10px;
+}
+
+.hex-explanation {
+	float: left;
+}

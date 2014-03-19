@@ -9,8 +9,4 @@ $(document).ready(function () {
             $(this).find('.top').after(currentInfantry);
         });
     });
-
-    $(document).on('click', '.menu-button', function(e) {
-        $('.map-container').hide();
-    });
 });
